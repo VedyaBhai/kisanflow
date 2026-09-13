@@ -45,40 +45,6 @@ function statusFor(demand, supply) {
   return { key: "BALANCED", color: COLORS.amber, bg: COLORS.amberSoft };
 }
 
-const VIRTUAL_LOTS = [
-  {
-    id: "VL-2026-014", crop: "Tomato", grade: "A", buyer: "Hyderabad Retail Buyer",
-    required: 10000,
-    farmers: [
-      { name: "Farmer A · Warangal", qty: 2000 },
-      { name: "Farmer B · Siddipet", qty: 1500 },
-      { name: "Farmer C · Nalgonda", qty: 3000 },
-      { name: "Farmer D · Hyderabad Rural", qty: 1000 },
-      { name: "Farmer E · Sangareddy", qty: 2500 },
-    ],
-    buyerPrice: 27, farmerRealization: 24, consumerPrice: 31, status: "READY FOR LOGISTICS",
-  },
-  {
-    id: "VL-2026-015", crop: "Chilli", grade: "A", buyer: "Telangana AgriExports",
-    required: 2200,
-    farmers: [
-      { name: "Farmer F · Khammam", qty: 900 },
-      { name: "Farmer G · Nalgonda", qty: 650 },
-      { name: "Farmer H · Sangareddy", qty: 500 },
-    ],
-    buyerPrice: 64, farmerRealization: 58, consumerPrice: 72, status: "COLLECTING",
-  },
-  {
-    id: "VL-2026-016", crop: "Onion", grade: "B", buyer: "SRK Wholesale Traders",
-    required: 8000,
-    farmers: [
-      { name: "Farmer I · Warangal", qty: 4200 },
-      { name: "Farmer J · Hyderabad Rural", qty: 3100 },
-    ],
-    buyerPrice: 19, farmerRealization: 15.8, consumerPrice: 23, status: "COLLECTING",
-  },
-];
-
 /* ---------------- Deterministic "AI" service layer ---------------- */
 /* Structured so a real ML/optimization backend can replace these later. */
 
@@ -194,7 +160,7 @@ function OverviewPage({ role, goTo }) {
     <div className="page">
       <section className="hero">
         <div className="hero-copy">
-          <div className="eyebrow-free-label">Ministry of Consumer Affairs, Food &amp; Public Distribution · Prototype</div>
+          <div className="eyebrow-free-label">Ministry of Consumer Affairs, Food &amp; Public Distribution</div>
           <h1 className="hero-title">KISANFLOW</h1>
           <p className="hero-tagline">Predict the demand. Pool the harvest. Optimize the journey.</p>
           <p className="hero-sub">

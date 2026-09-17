@@ -117,3 +117,70 @@ export const VIRTUAL_LOTS = [
     status: "COLLECTING",
   },
 ];
+// ============================================================
+// KISANFLOW DEMO WORKFLOW DATA
+// ============================================================
+
+export const DEMO_BUYER_DEMAND = {
+  buyer: "Vedya",
+  crop: "Tomato",
+  quantityKg: 5000,
+  grade: "A",
+  destination: "Hyderabad",
+  requiredDate: "Tomorrow",
+};
+
+export const DEMO_CANDIDATE_FARMERS = [
+  {
+    id: "DF01",
+    name: "Akshay",
+    loc: "Warangal",
+    crop: "Tomato",
+    qty: 2000,
+    grade: "A",
+    ready: "Tomorrow",
+    score: 96,
+  },
+  {
+    id: "DF02",
+    name: "Nikhil",
+    loc: "Narketpalli",
+    crop: "Tomato",
+    qty: 1500,
+    grade: "A",
+    ready: "Tomorrow",
+    score: 93,
+  },
+  {
+    id: "DF03",
+    name: "Akshaya",
+    loc: "Nalgonda",
+    crop: "Tomato",
+    qty: 1500,
+    grade: "A",
+    ready: "Tomorrow",
+    score: 91,
+  },
+];
+
+export const WHATSAPP_MESSAGE =
+  "నమస్కారం! KISANFLOW ద్వారా హైదరాబాద్‌కు Grade A టమాటా అవసరం ఉంది. మీకు అందుబాటులో ఉన్న పరిమాణాన్ని తెలియజేయండి.\n\n" +
+  "Hello! KISANFLOW has a buyer requirement for Grade A Tomato to Hyderabad. Please confirm your available quantity.";
+
+export const TELUGU_VOICE_TEXT =
+  "నమస్కారం. కిసాన్ ఫ్లో ద్వారా హైదరాబాద్‌కు గ్రేడ్ ఏ టమాటా అవసరం ఉంది. మీకు అందుబాటులో ఉన్న పరిమాణాన్ని దయచేసి తెలియజేయండి.";
+
+export const DEMO_FARMER_RESPONSES = {
+  Akshay: "Yes, I can supply 2000 kg.",
+  Nikhil: "Yes, I can supply 1500 kg.",
+  Akshaya: "Yes, I can supply 1500 kg.",
+};
+
+export const DEMO_LOT_ID = "VL-DEMO-5000";
+
+export const DEMO_LOGISTICS = {
+  partner: "Ruthvika",
+  vehicle: "TRK-101",
+  loadKg: 5000,
+  destination: "Hyderabad",
+};

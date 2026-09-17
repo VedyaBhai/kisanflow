@@ -184,3 +184,16 @@ export const DEMO_LOGISTICS = {
   loadKg: 5000,
   destination: "Hyderabad",
 };
+export const BUYER_DEMANDS = [
+  {
+    id: "BD001",
+    buyer: "Vedya",
+    crop: "Tomato",
+    quantity: 5000,
+    quantityKg: 5000,
+    grade: "A",
+    destination: "Hyderabad",
+    requiredDate: "Tomorrow",
+    status: "Open",
+  },
+];
